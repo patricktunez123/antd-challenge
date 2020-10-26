@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import AppRouter from './Routes';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './assets/css/font-awesome.min.css';
+import 'antd/dist/antd.css';
+import './assets/css/al_ui.css';
+import './assets/css/components.css';
+import './assets/css/index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() { 
+    return ( <AppRouter /> );
+  }
 }
-
+ 
 export default App;
