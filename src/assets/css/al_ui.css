@@ -1,0 +1,51 @@
+.white_color{
+    color: #ffffff;
+}
+.dark_blue_color{
+    color: #496175;
+}
+.black_color{
+    color: #000000;
+}
+.white_bg{
+    background-color: #ffffff;
+}
+.dark_blue_bg{
+    background-color: #496175;
+}
+.black_bg{
+    background-color: #000000;
+}
+
+.pad80{
+    padding: 80px;
+}
+.pato8{
+    padding-top: 24px;
+}
+.pabo8{
+    padding-bottom: 24px;
+}
+.btn_primary{
+    background-color: #496175;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-style: none;
+}
+.btn_default{
+    background-color: transparent;
+    color:  #000000;
+    border-style: none;
+    font-weight: bold;
+}
+.form_input{
+    height: 40px !important;
+    width: 100% !important;
+}
+.phone_input{
+    height: 40px !important;
+    width: 84% !important;
+}
