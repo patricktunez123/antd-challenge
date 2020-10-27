@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Input, Button} from 'antd';
+import { Form, Input, Button, Alert } from 'antd';
 import { MailOutlined } from '@ant-design/icons';
 
 class ResetPassword extends Component {
@@ -8,7 +8,8 @@ class ResetPassword extends Component {
             <React.Fragment>
                 <div className="container-fluid">
                     <div className="row main_container">
-                        <div className="col-md-8 white_bg left_container">
+                        <div className="col-md-3"></div>
+                        <div className="col-md-6 white_bg inner_container">
                             <h1>Awesomity Reset Password</h1>
                             <p className="pabo8">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
@@ -16,6 +17,7 @@ class ResetPassword extends Component {
                             <Form>
                                 <Form.Item
                                     name="email"
+                                    id="email"
                                     rules={[{ required: true, message: 'Please input your email', type: "email" }]}
                                 >
                                     <Input className="form_input" prefix={<MailOutlined className="site-form-item-icon" />} placeholder="Your email" />
