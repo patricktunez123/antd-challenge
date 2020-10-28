@@ -1,15 +1,10 @@
-import React, { Component } from 'react';
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable max-len */
+import React from 'react';
 import { Form, Input, Button } from 'antd';
 import { LockOutlined, MailOutlined } from '@ant-design/icons';
 
-
-class Login extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( 
+const Login = () => (
             <React.Fragment>
                 <div className="container-fluid">
                     <div className="row main_container">
@@ -21,7 +16,7 @@ class Login extends Component {
                             <Form>
                                 <Form.Item
                                     name="email"
-                                    rules={[{ required: true, message: 'OOps! Your email is required', type: "email" }]}
+                                    rules={[{ required: true, message: 'OOps! Your email is required', type: 'email' }]}
                                 >
                                     <Input className="form_input" prefix={<MailOutlined className="site-form-item-icon" />} placeholder="Your email" />
                                 </Form.Item>
@@ -38,18 +33,13 @@ class Login extends Component {
                                     />
                                 </Form.Item>
                                 <Form.Item>
-                                    <Button
-                                        type="primary"
-                                        htmlType="submit"
-                                        className="btn_primary form_input"
-                                        
-                                    >
+                                    <Button type="primary" htmlType="submit" className="btn_primary form_input">
                                         Login
                                     </Button>
                                 </Form.Item>
                             </Form>
                             <div className="forgot_btn pabo8"><a href="/reset-password">Forgot Password?</a></div>
-                            <div className="go_to_login_btn pabo8"><a href="/register">New? SIGN UP</a></div>
+                            <div className="go_to_login_btn pabo8"><a href="/create-account">New? SIGN UP</a></div>
                             <h6><span>Or sign in with</span></h6>
                             <div class="socail pabo8">
                                 <ul>
@@ -66,8 +56,6 @@ class Login extends Component {
                     </div>
                 </div>
             </React.Fragment>
-         );
-    }
-}
- 
+);
+
 export default Login;

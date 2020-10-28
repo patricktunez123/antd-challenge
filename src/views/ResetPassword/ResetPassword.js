@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Form, Input, Button, Alert } from 'antd';
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable max-len */
+import React from 'react';
+import { Form, Input, Button } from 'antd';
 import { MailOutlined } from '@ant-design/icons';
 
-class ResetPassword extends Component {
-    render() { 
-        return ( 
+const ResetPassword = () => (
             <React.Fragment>
                 <div className="container-fluid">
                     <div className="row main_container">
@@ -18,7 +18,7 @@ class ResetPassword extends Component {
                                 <Form.Item
                                     name="email"
                                     id="email"
-                                    rules={[{ required: true, message: 'Please input your email', type: "email" }]}
+                                    rules={[{ required: true, message: 'Please input your email', type: 'email' }]}
                                 >
                                     <Input className="form_input" prefix={<MailOutlined className="site-form-item-icon" />} placeholder="Your email" />
                                 </Form.Item>
@@ -27,7 +27,7 @@ class ResetPassword extends Component {
                                         type="primary"
                                         htmlType="submit"
                                         className="btn_primary form_input"
-                                        
+
                                     >
                                         Submit
                                     </Button>
@@ -39,8 +39,6 @@ class ResetPassword extends Component {
                     </div>
                 </div>
             </React.Fragment>
-         );
-    }
-}
- 
+);
+
 export default ResetPassword;

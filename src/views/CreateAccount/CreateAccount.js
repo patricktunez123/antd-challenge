@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable max-len */
+import React from 'react';
 import { Form, Input, Button, DatePicker, Select } from 'antd';
 import { UserOutlined, LockOutlined, MailOutlined } from '@ant-design/icons';
 
 const { Option } = Select;
 
-class Register extends Component {
-    render() { 
-        return ( 
+const Register = () => (
             <React.Fragment>
                 <div className="container-fluid">
                     <div className="row main_container">
@@ -38,7 +38,7 @@ class Register extends Component {
                                     <div className="col-md-6">
                                         <Form.Item
                                         name="dob"
-                                        rules={[{required: true, message: 'Please select your DOB'}]}
+                                        rules={[{ required: true, message: 'Please select your DOB' }]}
                                         >
                                             <DatePicker
                                                 className="form_input"
@@ -67,11 +67,11 @@ class Register extends Component {
                                 </Form.Item>
                                 <Form.Item
                                     name="email"
-                                    rules={[{ required: true, message: 'Please enter your email', type: "email" }]}
+                                    rules={[{ required: true, message: 'Please enter your email', type: 'email' }]}
                                 >
                                     <Input className="form_input" prefix={<MailOutlined className="site-form-item-icon" />} placeholder="Your email" />
                                 </Form.Item>
-                                
+
                                 <Form.Item>
                                     <Input.Group compact>
                                         <Form.Item
@@ -91,7 +91,7 @@ class Register extends Component {
                                             noStyle
                                             rules={[{ required: true, message: 'Phone number is required' }]}
                                         >
-                                            <Input 
+                                            <Input
                                              className="phone_input"
                                              placeholder="--- --- ---" />
                                         </Form.Item>
@@ -114,7 +114,7 @@ class Register extends Component {
                                         type="primary"
                                         htmlType="submit"
                                         className="btn_primary form_input"
-                                        
+
                                     >
                                         Register
                                     </Button>
@@ -137,8 +137,6 @@ class Register extends Component {
                     </div>
                 </div>
             </React.Fragment>
-         );
-    }
-}
- 
+);
+
 export default Register;
