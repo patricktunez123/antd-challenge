@@ -22,18 +22,22 @@ Awesome Libraries
 
 ### How to test this app
 
-- Click [here](https://awesome-libraries-k23ogxjkw.vercel.app/) to view this app's demo
+- Click [here](https://awesome-libraries-9aq3sabzm.vercel.app/) to view this app's demo
+- Demo for reset password [here](https://awesome-libraries-9aq3sabzm.vercel.app/reset-password)
+
+- Demo for setting new passowrd [here](https://awesome-libraries-9aq3sabzm.vercel.app/new-password/token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImtpbWVueWlrZXZpbkBhd2Vzb21pdHkucnciLCJpYXQiOjE2MDMyNzgxMTcsImV4cCI6MTYwMzI4MTcxN30.BzIofQYnxILpERKv7inFTggNI1GvBKaH4QUz-VjYfZU)
 
 ## Features
 
 - UI for login users.
 - UI for registering users.
+- UI for reseting password
 - Form validations.
+- The app follows Awesomity's react projects standards
 
 ## Features that have not done yet
 
-- Footer top border.
-- The logo column should be fixed (not scrollable).
+- None
 
 ## How to set up and test this app
 
