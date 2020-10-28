@@ -63,16 +63,6 @@ body{
     color: #000000 !important;
     font-weight: 500;
 }
- .powered_by {
-    position: absolute;
-    bottom: 0; 
-    left: 0; 
-    width: 100%; 
-    text-align: center;
-}
-.powered_by a{
-    color: #000000 !important;
-}
 @media (max-width: 575.98px) { 
     .left_container,
     .inner_container{
