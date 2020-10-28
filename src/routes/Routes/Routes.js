@@ -20,6 +20,7 @@ const Routes = () => (
         <Route path={routes.createAccount.url} component={CreateAccount} />
         <Route path={routes.resetPassword.url} component={ResetPassword} />
         <Route path={`${routes.setPassword.url}/:token`} component={SetPassword} />
+        <Route path='/' component={Login} />
       </Switch>
     </Suspense>
 );
