@@ -23,6 +23,10 @@ body{
     padding-right: 200px;
     
 }
+.inner_container{
+    padding: 100px;
+    
+}
 .socail ul{
     text-align: center;
     padding-top: 24px;
@@ -59,18 +63,9 @@ body{
     color: #000000 !important;
     font-weight: 500;
 }
- .powered_by {
-    position: absolute;
-    bottom: 0; 
-    left: 0; 
-    width: 100%; 
-    text-align: center;
-}
-.powered_by a{
-    color: #000000 !important;
-}
 @media (max-width: 575.98px) { 
-    .left_container{
+    .left_container,
+    .inner_container{
         padding: 50px 20px 50px 20px;
     }
     .right_containter{
@@ -82,7 +77,8 @@ body{
     }
  }
 @media (max-width: 767.98px) { 
-    .left_container{
+    .left_container,
+    .inner_container{
         padding: 50px 20px 50px 20px;
     }
     .right_containter{
@@ -94,7 +90,8 @@ body{
     }
  }
 @media (max-width: 991.98px) { 
-    .left_container{
+    .left_container,
+    .inner_container{
         padding: 50px 20px 50px 20px;
     }
     .phone_input{
